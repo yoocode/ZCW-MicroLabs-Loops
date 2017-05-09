@@ -6,7 +6,12 @@ package io.zipcoder.microlabs.mastering_loops;
 public class Main {
     public static void main(String[] args) {
         Numbers numbers = new Numbers();
-        numbers.oneToTen();
+
+//        numbers.oneToTen();
+//        numbers.oddNumbers();
+//        numbers.squares();
+
+        System.out.println(numbers.random4());
 
 
     }
