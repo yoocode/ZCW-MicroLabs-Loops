@@ -36,9 +36,9 @@ public class Shapes {
                     else sb.append(" " + mult + " |");
                 }
             }
-            sb.append("\n");
+            if (row != 4) sb.append("\n");
         }
-        return seed + sb.toString() + "";
+        return seed + sb.toString();
     }
 
 
