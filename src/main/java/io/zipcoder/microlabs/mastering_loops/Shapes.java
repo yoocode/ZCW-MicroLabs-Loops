@@ -43,8 +43,30 @@ public class Shapes {
 
 
     public String tableSquares(int n){
-        return "";
+        String seed = "tableSquares(6)\n*** Output ***\nA 6 x 6 table square\n";
+
+        StringBuilder sb = new StringBuilder();
+        int mult;
+
+        for (int row = 1; row <= n; row++) {
+            sb.append("|");
+            for (int col = 1; col <= n; col++) {
+                mult = row * col;
+                if (col == 1) {
+                    sb.append(" " + mult + " |");
+                } else {
+                    if (mult < 10) {
+                        sb.append("  " + mult + " |");
+                    } else {
+                        sb.append(" " + mult + " |");
+                    }
+                }
+            }
+            if (row != n) sb.append("\n");
+        }
+        return seed + sb.toString();
     }
+
 
     public static void main (String[] args){
         Shapes shapes = new Shapes();
